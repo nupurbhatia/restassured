@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="api.utilities.ExtentReportManager">
+        </listener>
+    </listeners>
+
+    <test verbose="2" preserve-order="true" name="C:/Users/nupurbhatia01/Downloads/demo (1)/restassured/src/test/java/api/tests">
+    <classes>
+        <class name="api.tests.Storetest">
+            <methods>
+            <include name="testCreateorder"/>
+            <include name="testGetOrder"/>
+            <include name="testDeleteOrder"/>
+            <include name="testGetinventorystatus"/>
+        </methods>
+         </class>
+    </classes>
+</test>
+</suite>
